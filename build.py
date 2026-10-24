@@ -6,6 +6,7 @@ OUT.mkdir(exist_ok=True)
 
 FONT = "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Inter, Arial, sans-serif"
 FEUP = "#8c2d19"
+FEUP_ON_DARK = "#e07a5f"  # lighter FEUP tone so links stay readable on GitHub dark
 GRAY = "#86868b"  # Apple's secondary text gray; readable on GitHub's light and dark backgrounds
 
 NAME = "Afonso Saraiva"
@@ -36,12 +37,11 @@ def banner():
 </svg>'''
 
 
-def pill(label):
-    """Apple's primary button: small filled capsule, no chevron."""
-    w, h = round(36 + len(label) * 8.2), 34
+def link(label, color):
+    """Apple-style text link: colored text with a chevron, no button chrome."""
+    w, h = round(len(label) * 8.3 + 18), 34
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" font-family="{FONT}">
-  <rect width="{w}" height="{h}" rx="17" fill="{FEUP}"/>
-  <text x="{w / 2}" y="22" text-anchor="middle" font-size="15" font-weight="500" fill="#fff" letter-spacing="-.1">{label}</text>
+  <text x="{w / 2}" y="22" text-anchor="middle" font-size="15" font-weight="500" fill="{color}" letter-spacing="-.1">{label} ›</text>
 </svg>'''
 
 
@@ -54,6 +54,7 @@ def note(label):
 
 
 (OUT / "banner.svg").write_text(banner())
-(OUT / "cv.svg").write_text(pill("View CV"))
+(OUT / "cv-light.svg").write_text(link("View CV", FEUP))
+(OUT / "cv-dark.svg").write_text(link("View CV", FEUP_ON_DARK))
 (OUT / "portfolio.svg").write_text(note("Portfolio coming soon"))
 print("ok")
