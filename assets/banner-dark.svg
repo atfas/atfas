@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="200" viewBox="0 0 1000 200" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Inter, Arial, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c4553a"/><stop offset="1" stop-color="#e8957d"/></linearGradient>
+    <radialGradient id="orb" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#8c2d19" stop-opacity=".30"/><stop offset="1" stop-color="#8c2d19" stop-opacity="0"/></radialGradient>
+    <clipPath id="c"><rect width="1000" height="200" rx="24"/></clipPath>
+  </defs>
+  <style>
+  .up { opacity: 0; animation: up 1s cubic-bezier(.2,.8,.2,1) forwards; }
+  .d1 { animation-delay: .1s } .d2 { animation-delay: .35s }
+  @keyframes up { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+  @media (prefers-reduced-motion: reduce) { .up { animation: none; opacity: 1 } }
+</style>
+  <g clip-path="url(#c)">
+    <rect width="1000" height="200" fill="#161617"/>
+    <ellipse cx="500" cy="230" rx="460" ry="150" fill="url(#orb)"/>
+  </g>
+  <text class="up d1" x="500" y="78" text-anchor="middle" font-size="16" font-weight="600" fill="url(#g)" letter-spacing=".3">Afonso Saraiva  ·  MSc @ FEUP</text>
+  <text class="up d2" x="500" y="132" text-anchor="middle" font-size="44" font-weight="700" fill="#f5f5f7" letter-spacing="-1.4">Thoughtful software. From database to pixel.</text>
+</svg>
