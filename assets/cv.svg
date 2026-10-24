@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="89" height="44" viewBox="0 0 89 44" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Inter, Arial, sans-serif">
-  <rect width="89" height="44" rx="22" fill="#8c2d19" fill-opacity="1"/>
-  <text x="45" y="28.5" text-anchor="middle" font-size="16" font-weight="600" fill="#fff">CV  ›</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="93" height="34" viewBox="0 0 93 34" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Inter, Arial, sans-serif">
+  <rect width="93" height="34" rx="17" fill="#8c2d19"/>
+  <text x="46.5" y="22" text-anchor="middle" font-size="15" font-weight="500" fill="#fff" letter-spacing="-.1">View CV</text>
 </svg>

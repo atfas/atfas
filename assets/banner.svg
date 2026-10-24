@@ -1,20 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="180" viewBox="0 0 1000 180" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Inter, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="112" viewBox="0 0 1000 112" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Inter, Arial, sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#94301b"/><stop offset="1" stop-color="#8c2d19"/></linearGradient>
-    <radialGradient id="hi" cx=".5" cy="0" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-    <clipPath id="c"><rect width="1000" height="180" rx="24"/></clipPath>
+    <radialGradient id="hi" cx=".5" cy="0" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <clipPath id="c"><rect width="1000" height="112" rx="20"/></clipPath>
   </defs>
   <style>
-  .up { opacity: 0; animation: up 1s cubic-bezier(.2,.8,.2,1) forwards; }
-  .d1 { animation-delay: .1s } .d2 { animation-delay: .3s }
-  @keyframes up { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+  .up { opacity: 0; animation: up .9s cubic-bezier(.2,.8,.2,1) .1s forwards; }
+  @keyframes up { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: none } }
   @media (prefers-reduced-motion: reduce) { .up { animation: none; opacity: 1 } }
 </style>
   <g clip-path="url(#c)">
-    <rect width="1000" height="180" fill="url(#bg)"/>
-    <rect width="1000" height="180" fill="url(#hi)"/>
+    <rect width="1000" height="112" fill="#8c2d19"/>
+    <rect width="1000" height="112" fill="url(#hi)"/>
   </g>
-  <text class="up d1" x="500" y="106" text-anchor="middle" font-size="50" fill="#fff" letter-spacing="-1.5">
-    <tspan font-weight="700">Afonso Saraiva</tspan><tspan font-weight="400" fill-opacity=".45" dx="14">·</tspan><tspan font-weight="500" fill-opacity=".78" dx="14">MSc @ FEUP</tspan>
+  <text class="up" x="500" y="68" text-anchor="middle" font-size="34" fill="#fff" letter-spacing="-.8">
+    <tspan font-weight="700">Afonso Saraiva</tspan><tspan font-weight="400" fill-opacity=".45" dx="10">·</tspan><tspan font-weight="500" fill-opacity=".78" dx="10">MSc @ FEUP</tspan>
   </text>
 </svg>
