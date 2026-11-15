@@ -56,5 +56,6 @@ def note(label):
 (OUT / "banner.svg").write_text(banner())
 (OUT / "cv-light.svg").write_text(link("View CV", FEUP))
 (OUT / "cv-dark.svg").write_text(link("View CV", FEUP_ON_DARK))
-(OUT / "portfolio.svg").write_text(note("Portfolio coming soon"))
+(OUT / "portfolio-light.svg").write_text(link("Portfolio", FEUP))
+(OUT / "portfolio-dark.svg").write_text(link("Portfolio", FEUP_ON_DARK))
 print("ok")
